@@ -243,3 +243,128 @@ const dailyMobileCraneCheck = {
       title: "8. Sicherheitseinrichtungen",
       items: [
         {
+          id: "lastmomentbegrenzer",
+          label: "Lastmomentbegrenzer aktiv, keine Störungen",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "notaus-test",
+          label: "Not-Aus-Unterbrechungen kurz getestet",
+          type: "boolean"
+        },
+        {
+          id: "feuerloescher",
+          label:
+            "Feuerlöscher vorhanden, Plombe intakt, Prüffrist gültig",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "erste-hilfe-set",
+          label: "Erste-Hilfe-Set vorhanden und vollständig",
+          type: "boolean"
+        },
+        {
+          id: "psa-und-warnweste",
+          label: "Persönliche Schutzausrüstung (inkl. Warnweste) vorhanden",
+          type: "boolean"
+        }
+      ]
+    },
+    {
+      id: "betriebsstoffe",
+      title: "9. Betriebsstoffe",
+      items: [
+        {
+          id: "kraftstoffstand",
+          label: "Kraftstoffstand ausreichend für geplanten Einsatz",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "adblue",
+          label: "AdBlue-Füllstand geprüft (falls erforderlich)",
+          type: "boolean"
+        },
+        {
+          id: "kuehlmittel",
+          label: "Kühlmittelstand im Sollbereich",
+          type: "boolean"
+        },
+        {
+          id: "scheibenwaschfluessigkeit",
+          label: "Scheibenwaschflüssigkeit ausreichend",
+          type: "boolean"
+        }
+      ]
+    },
+    {
+      id: "dokumente-organisation",
+      title: "10. Dokumente / Organisation",
+      items: [
+        {
+          id: "kranfahrerausweis",
+          label:
+            "Gültiger Kranfahrerausweis / Nachweis der Qualifikation vorhanden",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "uvv-pruefung",
+          label:
+            "UVV-Prüfung des Krans gültig (Plakette / Dokumentation geprüft)",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "betriebsanleitung",
+          label: "Betriebsanleitung im Fahrzeug vorhanden",
+          type: "boolean"
+        },
+        {
+          id: "arbeitsauftrag-gba",
+          label:
+            "Arbeitsauftrag / Gefährdungsbeurteilung erhalten und verstanden",
+          type: "boolean",
+          required: true
+        }
+      ]
+    },
+    {
+      id: "funktionstest",
+      title: "11. Kurzer Funktionstest",
+      items: [
+        {
+          id: "anfahr-bremstest",
+          label:
+            "Anfahr- und Bremstest bei niedriger Geschwindigkeit durchgeführt",
+          type: "boolean",
+          required: true
+        },
+        {
+          id: "lenkung-test",
+          label: "Lenkung auf Spiel und Funktion geprüft",
+          type: "boolean"
+        },
+        {
+          id: "drehwerk-funktionstest",
+          label: "Drehwerksfunktion ohne Last getestet",
+          type: "boolean"
+        },
+        {
+          id: "teleskop-winde-test",
+          label: "Teleskopieren und Winden kurz getestet",
+          type: "boolean"
+        },
+        {
+          id: "abschluss-fehlermeldungen",
+          label:
+            "Abschließende Kontrolle: keine relevanten Fehlermeldungen im System",
+          type: "boolean",
+          required: true
+        }
+      ]
+    }
+  ]
+};
