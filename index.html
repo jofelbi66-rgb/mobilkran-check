@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tägliche Kontrolle Mobilkran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Optional: eigenes CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tägliche Kontrolle Mobilkran</h1>
+  </header>
+
+  <main class="container">
+    <h2>Checkliste</h2>
+
+    <!-- HIER baut JavaScript die Checkliste hinein -->
+    <form id="checklistForm"></form>
+
+    <div class="button-row">
+      <button type="button" id="saveButton">Checkliste speichern</button>
+    </div>
+
+    <div id="messageArea"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – Kran- und Fahrzeugkontrollen</p>
+  </footer>
+
+  <!-- WICHTIG: Reihenfolge – erst Daten, dann Logik -->
+  <script src="checklist-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
